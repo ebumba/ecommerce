@@ -6,8 +6,18 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit3d381137107e51d407f900caf105ae73
 {
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/..' . '/ebumba/php-classes/src',
+    public static $prefixLengthsPsr4 = array (
+        'E' => 
+        array (
+            'Ebumba\\' => 7,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Ebumba\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ebumba/php-classes/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -41,7 +51,8 @@ class ComposerStaticInit3d381137107e51d407f900caf105ae73
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->fallbackDirsPsr4 = ComposerStaticInit3d381137107e51d407f900caf105ae73::$fallbackDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit3d381137107e51d407f900caf105ae73::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit3d381137107e51d407f900caf105ae73::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit3d381137107e51d407f900caf105ae73::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit3d381137107e51d407f900caf105ae73::$classMap;
 

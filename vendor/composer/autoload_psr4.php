@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    '' => array($vendorDir . '/ebumba/php-classes/src'),
+    'Ebumba\\' => array($vendorDir . '/ebumba/php-classes/src'),
 );

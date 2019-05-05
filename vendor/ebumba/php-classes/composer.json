@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Ebumba\\": "vendor\\ebumba\\php-classes\\src"
+            "": "vendor\\ebumba\\php-classes\\src"
         }
     }
 }
