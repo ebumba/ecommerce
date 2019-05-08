@@ -1,19 +1,22 @@
 {
-    "name": "ebumba/ecommerce",
+    "name": "hcodebr/php-classes",
+    "minimum-stability": "dev",
+    "type": "library",
+    "description": "Classes PHP",
+    "homepage": "https://github.com/hcodebr/php-classes",
     "authors": [
         {
-            "name": "Euclides Bumba",
-            "email": "info@arcadacosmica.pt"
+            "name": "Hcode Treinamentos",
+            "email": "suporte@hcode.com.br"
         }
     ],
     "require": {
-    	"phpmailer/phpmailer":"5.2.22",
-    	"slim/slim":"2.0",
-    	"rain/raintpl":"3.0.0"
+        "php": ">=7.0",
+        "rain/raintpl":"3.0.0"
     },
     "autoload": {
         "psr-4": {
-            "": "vendor\\ebumba\\php-classes\\src"
+            "": "src"
         }
     }
 }

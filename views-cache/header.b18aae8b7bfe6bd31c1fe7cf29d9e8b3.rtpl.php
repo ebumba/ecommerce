@@ -7,13 +7,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Starter</title>
+  <title>PA Eucaliptos | Home</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="/res/admin/bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" >
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
@@ -58,11 +59,11 @@ desired effect
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="/res/admin/index2.html" class="logo">
+    <a href="index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
+      <span class="logo-mini"><b>PA </b> E</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>LTE</span>
+      <span class="logo-lg"><b>PA </b> Eucaliptos</span>
     </a>
 
     <!-- Header Navbar -->
@@ -71,18 +72,19 @@ desired effect
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
         <span class="sr-only">Toggle navigation</span>
       </a>
+        
       <!-- Navbar Right Menu -->
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
           <!-- Messages: style can be found in dropdown.less-->
-          <li class="dropdown messages-menu">
+           <li class="dropdown messages-menu">
             <!-- Menu toggle button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-envelope-o"></i>
+              <i class="far fa-envelope"></i>
               <span class="label label-success">4</span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have 4 messages</li>
+              <li class="header">Você tem 4 messagens</li>
               <li>
                 <!-- inner menu: contains the messages -->
                 <ul class="menu">
@@ -94,18 +96,18 @@ desired effect
                       </div>
                       <!-- Message title and timestamp -->
                       <h4>
-                        Support Team
+                        Equipe de Suporte
                         <small><i class="fa fa-clock-o"></i> 5 mins</small>
                       </h4>
                       <!-- The message -->
-                      <p>Why not buy a new awesome theme?</p>
+                      <p>Por que não comprar um novo tema incrível?</p>
                     </a>
                   </li>
                   <!-- end message -->
                 </ul>
                 <!-- /.menu -->
               </li>
-              <li class="footer"><a href="#">See All Messages</a></li>
+              <li class="footer"><a href="#">Ver Todas Messagens</a></li>
             </ul>
           </li>
           <!-- /.messages-menu -->
@@ -114,17 +116,17 @@ desired effect
           <li class="dropdown notifications-menu">
             <!-- Menu toggle button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-bell-o"></i>
+              <i class="far fa-bell"></i>
               <span class="label label-warning">10</span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have 10 notifications</li>
+              <li class="header">Você tem 10 notificações</li>
               <li>
                 <!-- Inner Menu: contains the notifications -->
                 <ul class="menu">
                   <li><!-- start notification -->
                     <a href="#">
-                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                      <i class="fa fa-users text-aqua"></i> 5 novos membros se juntaram hoje
                     </a>
                   </li>
                   <!-- end notification -->
@@ -137,7 +139,7 @@ desired effect
           <li class="dropdown tasks-menu">
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-flag-o"></i>
+              <i class="far fa-flag"></i>
               <span class="label label-danger">9</span>
             </a>
             <ul class="dropdown-menu">
@@ -174,17 +176,18 @@ desired effect
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <!-- The user image in the navbar-->
-              <img src="/res/admin/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <img src="/res/admin/dist/img/foto-malebu.jpg" class="user-image" alt="User Image">
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
-              <span class="hidden-xs">Alexander Pierce</span>
+              <span class="hidden-xs"><?php echo getUserName(); ?></span>
             </a>
             <ul class="dropdown-menu">
               <!-- The user image in the menu -->
               <li class="user-header">
-                <img src="/res/admin/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="/res/admin/dist/img/foto-malebu.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  Alexander Pierce - Web Developer
+                  <?php echo getUserName(); ?>
+
                   <small>Member since Nov. 2012</small>
                 </p>
               </li>
@@ -206,10 +209,10 @@ desired effect
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  <a href="#" class="btn btn-default btn-flat">Perfil</a>
                 </div>
                 <div class="pull-right">
-                  <a href="/admin/logout" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="/admin/logout" class="btn btn-default btn-flat">Sair</a>
                 </div>
               </li>
             </ul>
@@ -231,10 +234,10 @@ desired effect
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="/res/admin/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="/res/admin/dist/img/foto-malebu.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
+          <p><?php echo getUserName(); ?></p>
           <!-- Status -->
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
@@ -254,21 +257,20 @@ desired effect
 
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu">
-        <li class="header">HEADER</li>
+        <li class="header">ADMINISTRAÇÃO</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
-        <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="#">Link in level 2</a></li>
-            <li><a href="#">Link in level 2</a></li>
-          </ul>
-        </li>
+        <li><a href="/admin/users"><i class="fa fa-users"></i> <span>Usuários</span></a></li>
+        <li><a href="/admin/sector"><i class="fab fa-stack-overflow"></i> <span>Sector</span></a></li>
+        <li><a href="/admin/categories"><i class="fas fa-puzzle-piece"></i> <span>Categorias</span></a></li>
+        <li><a href="/admin/products"><i class="fa fa-link"></i> <span>Produtos</span></a></li>
+        <li><a href="/admin/orders"><i class="fa fa-shopping-cart"></i> <span>Pedidos</span></a></li>
+        <li class="header">FINANÇAS</li>
+        <li><a href="#"><i class="fas fa-sort-amount-down"></i> <span>Entradas</span></a></li>
+        <li><a href="#"><i class="fas fa-sort-amount-up"></i> <span>Saidas</span></a></li>
+        <li><a href="#"><i class="fas fa-truck-moving"></i> <span>Transportadora</span></a></li>
+        
+        
+        
       </ul>
       <!-- /.sidebar-menu -->
     </section>

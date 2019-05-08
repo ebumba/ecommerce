@@ -424,7 +424,7 @@ class Tpl {
                     $this->blackList($var);
 
                     //loop variables
-                    $counter = "\$counter$loopLevel";       // count iteration
+                    $counter = "\$counteKzloopLevel";       // count iteration
 
                     if (isset($matches['key']) && isset($matches['value'])) {
                         $key = $matches['key'];
@@ -447,7 +447,7 @@ class Tpl {
                 elseif (preg_match($tagMatch['loop_close'], $html)) {
 
                     //iterator
-                    $counter = "\$counter$loopLevel";
+                    $counter = "\$counteKzloopLevel";
 
                     //decrease the loop counter
                     $loopLevel--;
