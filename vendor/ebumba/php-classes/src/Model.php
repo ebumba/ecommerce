@@ -6,8 +6,6 @@ class Model {
 
 	private $values = [];
 
-	public function setData($data)
-	{
 
 		foreach ($data as $key => $value)
 		{
